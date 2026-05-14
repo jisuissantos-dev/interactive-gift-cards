@@ -6,19 +6,61 @@
     <meta name="description" content="Nosso primeiro ano juntos">
     <title>Nosso primeiro ano juntos</title>
     <link rel="stylesheet" href="style.css">
-   
+   <head>
+    ...
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
 </head>
 <body>
-    <br>
-    <center>
-       <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-
+    
+     
 <center>
     <h1 style="font-family: 'Great Vibes', cursive; color: #000000; font-size: 60px; font-weight: normal;">
         Em comemoração ao nosso primeiro ano juntos
     </h1>
 </center>
-    </center>
+
+
+    <nav class="menu-navegacao">
+    <ul>
+        <li><a href="#home">Nossa História</a></li>
+        <li><a href="#vales">Vales Surpresa</a></li>
+        <li><a href="#presentes">Presentes</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="secao-momentos">
+    <div class="container">
+        <h2 class="titulo-sessao">Um pouco de nós</h2>
+
+        <!-- Momento 1: Foto na Esquerda, Texto na Direita -->
+        <div class="momento">
+            <div class="foto-momento">
+                <img src="Captura de tela 2023-10-10 103421.png" alt="Nosso primeiro encontro">
+            </div>
+            <div class="texto-momento">
+                <h3>Amar você</h3>
+                <p>Amar você é uma das coisas mais surpreendentes que já me aconteceu. Estar com você é a parte favorita dos meus dias. Nossas conversas, nossos momentos de silêncio, nossa risada, tudo é melhor quando você está ao meu lado..</p>
+                <span class="data">23/05/2026</span>
+            </div>
+        </div>
+
+        <!-- Momento 2: Foto na Direita, Texto na Esquerda (Invertido) -->
+        <div class="momento inverso">
+            <div class="foto-momento">
+                <img src="imagens/mine.png" alt="Dia do pedido">
+            </div>
+            <div class="texto-momento">
+                <h3>Para o futuro</h3>
+                <p>Desejo um futuro do qual possamos viver sempre como o primeiro dia, que nosso amor seja eterno.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <br>
+
 
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 
@@ -70,7 +112,7 @@
                 <img src="imagens/verso.png" alt="Verso">
             </div>
             <div class="vale-verso">
-                <img src="imagens/vale-steam.png" alt="Vale Steam">
+                <img src="imagens/Vale-steam.png" alt="Vale Steam">
             </div>
         </div>
     </div>  
@@ -117,8 +159,39 @@
 
 
 </div>
+</section>
 
- <script src="script.js"></script>
+<section id="presentes" class="secao-presentes">
+    <div class="container">
+        <h2 class="titulo-sessao">Meus Presentes</h2>
+        <p class="subtitulo">Coisas que escolhi pensando em você! </p>
 
+        <div class="grid-presentes">
+            <!-- Item 1: Chaveiro -->
+            <div class="card-presente">
+                <div class="tag-categoria">Acessório</div>
+                <img src="imagens/chaveiro.webp" alt="Chaveiro de Casal">
+                <div class="info-presente">
+                    <h3>Chaveiro de Casal</h3>
+                    <p>Para carregarmos uma lembraça de um bom filme por ai.</p>
+                </div>
+            </div>
+
+            <!-- Item 2: Placa Sanji -->
+            <div class="card-presente destaque-anime">
+                <div class="tag-categoria">Decoração</div>
+                <img src="imagens/sanji_.jpg" alt="Placa Sanji Wanted">
+                <div class="info-presente">
+                    <h3>Placa Wanted: Sanji</h3>
+                    <p>Lembro que uma vez você disse que queria uma.</p>
+                </div>
+            </div>
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
 </body>
+ 
 </html>

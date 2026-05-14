@@ -16,7 +16,7 @@ window.addEventListener('load', () => {
             colors: ['#470391', '#d1acf6', '#ffffff', '#ff69b4']
         });
 
-        confetti({
+        confetti({ 
             particleCount: 50,
             angle: 120,
             spread: 55,

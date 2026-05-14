@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(135deg, #e2d7ee 0%, #d1acf6 100%);
+    background: linear-gradient(135deg, #e6e5e8 0%, #e6e5e8 100%);
     min-height: 100vh; /* Garante que o fundo cubra a tela toda */
 }
 .imagens-vales {
@@ -49,4 +49,192 @@ body {
     display: block;
     width: 100%;   /* segue o tamanho natural da imagem */
     height: auto;
+}
+
+.menu-navegacao {
+    position: fixed; /* Fixa o menu no topo */
+    top: 0;
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.95); /* Fundo escuro com leve transparência */
+    padding: 15px 0;
+    z-index: 1000; /* Garante que fique acima de tudo */
+    border-bottom: 1px solid #f4d0e8; /* Linha fina com a cor do seu título */
+}
+
+.menu-navegacao ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    gap: 30px; /* Espaço entre os links */
+    margin: 0;
+    padding: 0;
+}
+
+.menu-navegacao a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.menu-navegacao a:hover {
+    color: #7a2f61; /* Cor de destaque ao passar o mouse */
+}
+
+/* Adicione um padding ao body para o conteúdo não ficar escondido atrás do menu */
+body {
+    padding-top: 60px;
+}
+
+.secao-momentos {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.titulo-sessao {
+    text-align: center;
+    font-family: 'Georgia', serif; /* Ou a fonte cursiva que você já usa */
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #914b7a;
+}
+
+.momento {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    flex-wrap: wrap; /* Para funcionar bem no celular */
+}
+
+.momento.inverso {
+    flex-direction: row-reverse; /* Inverte a ordem apenas nesse bloco */
+}
+
+.foto-momento {
+    flex: 1;
+    min-width: 300px;
+}
+
+.foto-momento img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border: 2px solid #a03a7e;
+    transition: transform 0.3s;
+}
+
+.foto-momento img:hover {
+    transform: scale(1.02);
+}
+
+.texto-momento {
+    flex: 1;
+    min-width: 300px;
+}
+
+.texto-momento h3 {
+    color: #783e65;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.texto-momento p {
+    line-height: 1.6;
+    color: #000000;
+    font-size: 1.1rem;
+}
+
+.data {
+    display: block;
+    margin-top: 15px;
+    font-style: italic;
+    color: #000000;
+}
+
+/* Ajuste para celular */
+@media (max-width: 768px) {
+    .momento, .momento.inverso {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.secao-presentes {
+    padding: 80px 20px;
+    background-color: #e6e5e8; /* Um tom levemente diferente para separar as seções */
+}
+
+.subtitulo {
+    text-align: center;
+    color: #1b1a1a;
+    margin-bottom: 40px;
+}
+
+.grid-presentes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cria colunas automáticas */
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card-presente {
+    background: #252525;
+    border-radius: 20px;
+    overflow: hidden; /* Corta a imagem nas bordas arredondadas */
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #333;
+}
+
+.card-presente:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(244, 208, 232, 0.2);
+    border-color: #f4d0e8;
+}
+
+.card-presente img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover; /* Garante que as fotos fiquem do mesmo tamanho sem deformar */
+}
+
+.tag-categoria {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #f4d0e8;
+    color: #121212;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.info-presente {
+    padding: 10px;
+    text-align: center;
+}
+
+.info-presente h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.info-presente p {
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Efeito especial para o item do Sanji */
+.destaque-anime {
+    border: 1px solid #ffcc00; /* Cor dourada/amarelada do One Piece */
 }
